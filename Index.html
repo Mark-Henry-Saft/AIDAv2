@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIDAv2: The Next-Generation AI-Powered DeFi Infrastructure</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray background */
+        }
+        /* Custom colors based on AID's branding (adjust as needed) */
+        .bg-aid-primary { background-color: #00d2d2; } /* Teal */
+        .text-aid-primary { color: #00d2d2; }
+        .bg-aid-secondary { background-color: #00a8a8; } /* Darker Teal */
+        .hover\:bg-aid-secondary:hover { background-color: #00a8a8; }
+        .border-aid-primary { border-color: #00d2d2; }
+
+        /* Smooth scroll for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom scrollbar for chat history */
+        .chat-history::-webkit-scrollbar {
+            width: 8px;
+        }
+        .chat-history::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        .chat-history::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        .chat-history::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header/Navigation (Optional, but good for larger pages) -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-aid-primary">AIDAv2</a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#features" class="hover:text-aid-primary transition duration-300">Features</a></li>
+                    <li><a href="#benefits" class="hover:text-aid-primary transition duration-300">Why AIDAv2?</a></li>
+                    <li><a href="#ai-assistant" class="hover:text-aid-primary transition duration-300">AI Assistant</a></li>
+                    <li><a href="#join" class="hover:text-aid-primary transition duration-300">Join Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-aid-primary to-aid-secondary text-white py-20 px-4 text-center rounded-b-lg">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                Revolutionize Your Returns with AIDAv2
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl mb-8 opacity-90">
+                The Next-Generation AI-Powered DeFi Infrastructure for Secure, Consistent & Effortless Crypto Earnings.
+            </p>
+            <a href="#join" class="inline-block bg-white text-aid-primary font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                Start Earning Today!
+            </a>
+            <p class="mt-4 text-sm opacity-80">Join the future of decentralized finance with AI intelligence.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 px-4 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
+                What AIDAv2 Offers
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature Card 1: AID.Data -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="flex items-center justify-center bg-aid-primary rounded-full w-16 h-16 mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0h.01M9 10V5a2 2 0 012-2h2a2 2 0 012 2v5m-3 6h.01M15 19v-6a2 2 0 00-2-2h-2a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0h.01M15 10V5a2 2 0 012-2h2a2 2 0 012 2v5m-3 6h.01"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">AID.Data: AI-Powered Insights</h3>
+                    <p class="text-gray-600 text-center">Gain accurate market dynamics and comprehensive insights through powerful AI analysis of on-chain big data across multiple mainnets.</p>
+                </div>
+
+                <!-- Feature Card 2: AIDeFi (Lossless Cycle Restaking) -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="flex items-center justify-center bg-aid-primary rounded-full w-16 h-16 mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V9m0 3v2m0 3.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">AIDeFi: Lossless Restaking</h3>
+                    <p class="text-gray-600 text-center">Participate in lossless cycle restaking for stable monthly returns with one-click automation and instant deposits/withdrawals.</p>
+                </div>
+
+                <!-- Feature Card 3: AID BOT -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="flex items-center justify-center bg-aid-primary rounded-full w-16 h-16 mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 002.92 12c0 2.89.587 5.611 1.662 8.136a12.001 12.001 0 0017.518-8.136 12.001 12.001 0 00-2.92-9.056z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">AID BOT: Intelligent Assistant</h3>
+                    <p class="text-gray-600 text-center">Your cutting-edge AI-powered companion for real-time market analysis, trading assistance, and seamless Web3 interaction.</p>
+                </div>
+
+                <!-- Feature Card 4: AID.Ex -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="flex items-center justify-center bg-aid-primary rounded-full w-16 h-16 mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h6l3 3v7H15m-1 0a2 2 0 11-4 0m4 0H9m5 0v1h-.01M9 19a2 2 0 11-4 0m4 0H5v-7l3-3h6l3 3v4m-9-3h.01"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">AID.Ex: AI-Driven DEX</h3>
+                    <p class="text-gray-600 text-center">Revolutionizing decentralized exchange with intelligent automation, precision trading, and comprehensive cross-chain support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why AIDAv2 Section (Benefits) -->
+    <section id="benefits" class="py-16 px-4 bg-f0f4f8">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
+                Why Choose AIDAv2?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-aid-primary rounded-full p-2 mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Unmatched Security</h3>
+                            <p class="text-gray-600">Audited by BEOSIN, a global leader in blockchain security, ensuring your assets are always protected.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-aid-primary rounded-full p-2 mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Effortless Passive Income</h3>
+                            <p class="text-gray-600">Set it and forget it! Our automated Lossless Cycle Restaking protocol generates consistent daily returns.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-aid-primary rounded-full p-2 mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H2v-2a4 4 0 014-4h2a4 4 0 014 4v2m3-3h6m-6 0h-1M6 9a1 1 0 11-2 0 1 1 0 012 0zm3 0a1 1 0 11-2 0 1 1 0 012 0zm3 0a1 1 0 11-2 0 1 1 0 012 0zm3 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Lucrative Referral Program</h3>
+                            <p class="text-gray-600">Share the wealth! Earn substantial rewards by inviting others to join the AIDAv2 ecosystem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center p-6 bg-white rounded-lg shadow-xl">
+                    <!-- Placeholder for an image or animated graphic representing growth/AI -->
+                    <img src="https://placehold.co/400x300/00d2d2/ffffff?text=AI+Powered+Growth" alt="AI Powered Growth" class="rounded-lg max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Assistant Section (Gemini API Integration) -->
+    <section id="ai-assistant" class="py-16 px-4 bg-gray-100">
+        <div class="container mx-auto max-w-3xl bg-white rounded-lg shadow-lg p-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-900">
+                ✨ Talk to Our AID BOT Assistant ✨
+            </h2>
+            <p class="text-center text-gray-600 mb-6">
+                Have questions about AIDAv2? Ask our AI-powered assistant for instant answers!
+            </p>
+
+            <!-- Chat Interface -->
+            <div class="flex flex-col h-[400px] border border-gray-300 rounded-lg overflow-hidden">
+                <!-- Chat History Display -->
+                <div id="chat-history" class="flex-1 p-4 overflow-y-auto chat-history bg-gray-50">
+                    <!-- Initial Bot Message -->
+                    <div class="flex justify-start mb-4">
+                        <div class="bg-blue-100 text-blue-800 p-3 rounded-xl max-w-[80%] break-words shadow-sm">
+                            Hello! I'm your AID BOT Assistant. How can I help you learn about AIDAv2 today?
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Input Area -->
+                <div class="flex p-4 border-t border-gray-300 bg-white">
+                    <input type="text" id="user-input" class="flex-1 p-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-aid-primary" placeholder="Ask a question about AIDAv2...">
+                    <button id="send-button" class="bg-aid-primary text-white p-3 rounded-r-lg font-semibold hover:bg-aid-secondary transition duration-300 flex items-center justify-center">
+                        <span id="send-text">Send</span>
+                        <svg id="loading-spinner" class="animate-spin h-5 w-5 text-white ml-2 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="join" class="py-16 px-4 bg-aid-secondary text-white text-center">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">Ready to Elevate Your DeFi Experience?</h2>
+            <p class="text-lg mb-8 opacity-90">
+                Join AIDAv2 today and harness the power of AI to maximize your crypto potential.
+            </p>
+            <div class="space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="https://aidav2.com" target="_blank" class="inline-block bg-white text-aid-primary font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    Visit AIDAv2.com
+                </a>
+                <a href="#contact" class="inline-block border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-aid-secondary transition duration-300 transform hover:-translate-y-1">
+                    Get My Referral Link
+                </a>
+            </div>
+            <p class="mt-8 text-sm opacity-70">
+                Your future in AI-powered decentralized finance starts here.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2025 AIDAv2. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-aid-primary transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-aid-primary transition duration-300">Terms of Service</a>
+                <a href="https://twitter.com/yourAIDAv2" target="_blank" class="hover:text-aid-primary transition duration-300">X.com</a>
+                <a href="https://youtube.com/yourAIDAv2" target="_blank" class="hover:text-aid-primary transition duration-300">YouTube</a>
+                <!-- Add more social links as needed -->
+            </div>
+            <p class="text-xs text-gray-400 mt-4" id="contact">For referral inquiries, please connect with me directly through my social channels or provided contact methods.</p>
+        </div>
+    </footer>
+
+    <script>
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+        const chatHistoryDiv = document.getElementById('chat-history');
+        const loadingSpinner = document.getElementById('loading-spinner');
+        const sendText = document.getElementById('send-text');
+
+        // Initial chat history with system instructions for the LLM
+        let chatHistory = [
+            {
+                role: "user",
+                parts: [{ text: `You are an AI assistant for AIDAv2, a next-generation AI-powered DeFi infrastructure. Your goal is to provide helpful and concise information about AIDAv2 based on the following key details:
+
+                - AIDAv2: Next-Generation AI-Powered DeFi Infrastructure for Secure, Consistent & Effortless Crypto Earnings.
+                - AID.Data: AI-powered insights, accurate market dynamics, comprehensive insights from on-chain big data across multiple mainnets.
+                - AIDeFi (Lossless Cycle Restaking): Participate in lossless cycle restaking for stable monthly returns with one-click automation and instant deposits/withdrawals.
+                - AID BOT: Cutting-edge AI-powered companion for real-time market analysis, trading assistance, and seamless Web3 interaction.
+                - AID.Ex: AI-driven decentralized exchange (DEX) for intelligent automation, precision trading, and comprehensive cross-chain support.
+                - Security: Audited by BEOSIN, a global leader in blockchain security.
+                - Benefits: Unmatched Security, Effortless Passive Income, Lucrative Referral Program.
+                - Referral Program: Earn substantial rewards by inviting others to join the AIDAv2 ecosystem.
+
+                Keep your responses focused solely on AIDAv2 and its features. Do not answer questions outside this scope. If a question is irrelevant to AIDAv2, politely state that you can only answer questions related to AIDAv2. Be friendly and encouraging.` }]
+            },
+            {
+                role: "model",
+                parts: [{ text: "Understood! I'm ready to answer questions about AIDAv2." }]
+            }
+        ];
+
+        sendButton.addEventListener('click', sendMessage);
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        async function sendMessage() {
+            const userMessage = userInput.value.trim();
+            if (userMessage === '') return;
+
+            // Display user message
+            appendMessage(userMessage, 'user');
+            userInput.value = ''; // Clear input
+
+            // Show loading spinner
+            sendText.classList.add('hidden');
+            loadingSpinner.classList.remove('hidden');
+            sendButton.disabled = true;
+
+            // Add user message to chat history for LLM
+            chatHistory.push({ role: "user", parts: [{ text: userMessage }] });
+
+            try {
+                const payload = {
+                    contents: chatHistory,
+                };
+                const apiKey = ""; // Canvas will provide this API key at runtime
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const botResponse = result.candidates[0].content.parts[0].text;
+                    appendMessage(botResponse, 'bot');
+                    // Add bot response to chat history
+                    chatHistory.push({ role: "model", parts: [{ text: botResponse }] });
+                } else {
+                    appendMessage("Sorry, I couldn't get a response. Please try again.", 'bot');
+                }
+            } catch (error) {
+                console.error("Error calling Gemini API:", error);
+                appendMessage("An error occurred while fetching the response. Please try again.", 'bot');
+            } finally {
+                // Hide loading spinner
+                sendText.classList.remove('hidden');
+                loadingSpinner.classList.add('hidden');
+                sendButton.disabled = false;
+                chatHistoryDiv.scrollTop = chatHistoryDiv.scrollHeight; // Scroll to bottom
+            }
+        }
+
+        function appendMessage(text, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('mb-4', 'flex');
+
+            if (sender === 'user') {
+                messageDiv.classList.add('justify-end');
+                messageDiv.innerHTML = `
+                    <div class="bg-aid-primary text-white p-3 rounded-xl max-w-[80%] break-words shadow-sm">
+                        ${text}
+                    </div>
+                `;
+            } else {
+                messageDiv.classList.add('justify-start');
+                messageDiv.innerHTML = `
+                    <div class="bg-blue-100 text-blue-800 p-3 rounded-xl max-w-[80%] break-words shadow-sm">
+                        ${text}
+                    </div>
+                `;
+            }
+            chatHistoryDiv.appendChild(messageDiv);
+            chatHistoryDiv.scrollTop = chatHistoryDiv.scrollHeight; // Auto-scroll to the latest message
+        }
+    </script>
+</body>
+</html>
